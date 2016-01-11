@@ -12,3 +12,11 @@
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
     </div>
+
+<ul>
+<% flash.each do |key, msg| %>
+  <%= content_tag :li, msg, id: key %>
+<% end %>
+</ul>
+
+<p><%= link_to 'Sign in with Facebook', signin_path %></p>
