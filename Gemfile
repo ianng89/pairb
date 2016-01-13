@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'pg'
+gem 'searchkick'
 gem 'clearance'
 gem 'omniauth-facebook'
 gem 'bootstrap-sass', '~> 3.3.6'

@@ -7,6 +7,7 @@ root :to => 'home#index'
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/signin' => 'sessions#new', :as => :signin
+  get '/search' => 'properties#search' 
   # some other routes
   resources :users, only: [:new]
 end

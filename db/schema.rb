@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160113032659) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "properties", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
@@ -37,7 +40,7 @@ ActiveRecord::Schema.define(version: 20160113032659) do
     t.string   "provider"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email"
-  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+  add_index "users", ["email"], name: "index_users_on_email", using: :btree
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
 
 end
