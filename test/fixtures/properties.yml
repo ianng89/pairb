@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  prop_type: MyString
+  occupancy: 1
+  details: MyString
+  price: 1
+  user_id: 1
+
+two:
+  name: MyString
+  location: MyString
+  prop_type: MyString
+  occupancy: 1
+  details: MyString
+  price: 1
+  user_id: 1
