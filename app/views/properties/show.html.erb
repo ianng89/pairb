@@ -35,5 +35,10 @@
   <%= @property.user_id %>
 </p>
 
+<p> 
+  <strong>Picture:</strong>
+  <%= image_tag @property.picture_url %>
+</p>
+
 <%= link_to 'Edit', edit_property_path(@property) %> |
 <%= link_to 'Back', properties_path %>
